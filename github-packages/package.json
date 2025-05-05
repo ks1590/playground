@@ -1,0 +1,41 @@
+{
+  "name": "@GITHUB_USERNAME/my-package",
+  "version": "0.1.0",
+  "description": "GitHub Packagesで公開するnpmパッケージ",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/my-library.umd.cjs",
+  "module": "./dist/my-library.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/my-library.js",
+      "require": "./dist/my-library.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --config vite.config.ts && tsc --emitDeclarationOnly",
+    "prepublishOnly": "npm run build",
+    "publish-package": "node scripts/publish.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GITHUB_USERNAME/REPO_NAME.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.4"
+  }
+}

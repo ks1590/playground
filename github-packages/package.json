@@ -1,6 +1,6 @@
 {
   "name": "@ks1590/playground",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "GitHub Packagesで公開するnpmパッケージ",
   "type": "module",
   "files": [
@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GITHUB_USERNAME/REPO_NAME.git"
+    "url": "git+https://github.com/ks1590/playground.git"
   },
   "keywords": [],
   "author": "",

@@ -1,5 +1,5 @@
 {
-  "name": "@GITHUB_USERNAME/my-package",
+  "name": "@ks1590/playground",
   "version": "0.1.0",
   "description": "GitHub Packagesで公開するnpmパッケージ",
   "type": "module",

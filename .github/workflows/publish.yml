@@ -1,5 +1,8 @@
 name: Publish Package to GitHub Packages
 
+defaults:
+  run:
+    working-directory: github-packages
 on:
   push:
     branches: [main]
